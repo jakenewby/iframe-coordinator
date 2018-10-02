@@ -22,4 +22,7 @@ ${SCRIPTS_DIR}/buildlibs.sh
   # This may have been added during npm install and pre-push package.
   rm -f ${PROJ_DIR}.git/hooks/pre-push
 
+# Testing
+npm config set loglevel verbose
+
 ${NPM_UTILS}/scripts/version-and-publish.sh -n
